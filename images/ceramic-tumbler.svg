@@ -1,0 +1,37 @@
+<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tumbler body -->
+  <defs>
+    <linearGradient id="tumblerGrad" x1="0%" y1="0%" x2="100%">
+      <stop offset="0%" style="stop-color:#c9915b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a67c52;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9e6f4a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main body -->
+  <path d="M 45 70 L 50 180 Q 50 195 65 195 L 135 195 Q 150 195 150 180 L 155 70 Z" fill="url(#tumblerGrad)" stroke="#6f5a42" stroke-width="2"/>
+  
+  <!-- Interior shadow -->
+  <path d="M 48 75 L 52 175 Q 52 192 65 192 L 135 192 Q 148 192 148 178 L 152 75 Z" fill="#6f5a42" opacity="0.1"/>
+  
+  <!-- Highlight on side -->
+  <ellipse cx="60" cy="110" rx="8" ry="35" fill="#ffffff" opacity="0.2"/>
+  
+  <!-- Top rim -->
+  <ellipse cx="100" cy="70" rx="55" ry="18" fill="#8b6f47" stroke="#6f5a42" stroke-width="2"/>
+  <ellipse cx="100" cy="68" rx="52" ry="15" fill="#9e7d55"/>
+  
+  <!-- Hot liquid inside -->
+  <ellipse cx="100" cy="120" rx="45" ry="12" fill="#8b5a3c"/>
+  
+  <!-- Steam wisps -->
+  <path d="M 85 50 Q 85 35 95 25" stroke="#c9a88e" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 115 45 Q 115 30 105 20" stroke="#c9a88e" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+  
+  <!-- Coffee logo/text area -->
+  <circle cx="100" cy="140" r="20" fill="#ffffff" opacity="0.08"/>
+  <text x="100" y="143" text-anchor="middle" fill="#d4a574" font-family="serif" font-size="10" font-weight="bold">CAFÉ</text>
+  
+  <!-- Bottom -->
+  <ellipse cx="100" cy="195" rx="50" ry="12" fill="#6f5a42"/>
+</svg>

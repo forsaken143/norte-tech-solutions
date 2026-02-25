@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restaurant Demo | Norte Tech Solutions</title>
+    <meta name="description" content="Restaurant demo website by Norte Tech Solutions." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="restaurant-styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Norte Tech Solutions">
+          <span class="brand-mark">NTS</span>
+          <span class="brand-text">
+            <span class="brand-name">Norte Tech</span>
+            <span class="brand-sub">Solutions</span>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html#services">Services</a>
+          <a href="index.html#demos">Demos</a>
+          <a href="index.html#contact" class="btn btn-light">Start a Project</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Restaurant demo</p>
+            <h1>A dining experience that turns guests into regulars.</h1>
+            <p class="lead">
+              Tell your food story with a cinematic menu, reservation widgets, and events that keep
+              the dining room full.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="index.html#contact">Request a build</a>
+              <a class="btn btn-ghost" href="index.html#demos">Back to demos</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <span class="stat">2x</span>
+                <span class="stat-label">Table turns</span>
+              </div>
+              <div>
+                <span class="stat">4.9</span>
+                <span class="stat-label">Guest rating</span>
+              </div>
+              <div>
+                <span class="stat">+35%</span>
+                <span class="stat-label">Reservation lift</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="card">
+              <p class="card-title">Dining essentials</p>
+              <ul>
+                <li>Interactive menu design</li>
+                <li>Reservations and waitlist</li>
+                <li>Private events + catering</li>
+                <li>Location and hours manager</li>
+              </ul>
+              <div class="card-footer">
+                <span>Ready in 3-5 weeks</span>
+                <span class="pulse"></span>
+              </div>
+            </div>
+            <div class="orb"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Today's menu</p>
+            <h2>Seasonal plates, curated weekly.</h2>
+            <p>Feature signature dishes with clear pricing and dietary callouts.</p>
+          </div>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div>
+                <h4>Seared scallops</h4>
+                <p>Citrus beurre blanc, shaved fennel.</p>
+              </div>
+              <span class="price">$18</span>
+            </div>
+            <div class="menu-item">
+              <div>
+                <h4>Charred octopus</h4>
+                <p>Fingerling potatoes, smoked paprika.</p>
+              </div>
+              <span class="price">$21</span>
+            </div>
+            <div class="menu-item">
+              <div>
+                <h4>Heritage tomato salad</h4>
+                <p>Stracciatella, basil oil, sea salt.</p>
+              </div>
+              <span class="price">$14</span>
+            </div>
+            <div class="menu-item">
+              <div>
+                <h4>Wood-fired ribeye</h4>
+                <p>Truffle butter, blistered broccolini.</p>
+              </div>
+              <span class="price">$38</span>
+            </div>
+            <div class="menu-item">
+              <div>
+                <h4>Handmade gnocchi</h4>
+                <p>Wild mushrooms, parmesan foam.</p>
+              </div>
+              <span class="price">$24</span>
+            </div>
+            <div class="menu-item">
+              <div>
+                <h4>Dark chocolate torte</h4>
+                <p>Whipped mascarpone, sea salt.</p>
+              </div>
+              <span class="price">$12</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Reservations</p>
+            <h2>Hold your table in seconds.</h2>
+          </div>
+          <div class="split">
+            <form class="contact-form">
+              <div class="form-grid">
+                <label>
+                  Name
+                  <input type="text" name="name" placeholder="Full name" />
+                </label>
+                <label>
+                  Party size
+                  <input type="number" name="party" min="1" max="12" placeholder="2" />
+                </label>
+              </div>
+              <label>
+                Date
+                <input type="date" name="date" />
+              </label>
+              <label>
+                Time
+                <input type="time" name="time" />
+              </label>
+              <label>
+                Special requests
+                <textarea name="requests" rows="4" placeholder="Allergies, celebrations, seating"></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary">Reserve a table</button>
+            </form>
+            <div class="panel">
+              <h3>Hours + location</h3>
+              <ul class="panel-list">
+                <li>Mon-Thu: 5pm - 10pm</li>
+                <li>Fri-Sat: 5pm - 11pm</li>
+                <li>Sun: 4pm - 9pm</li>
+                <li>118 Valencia St, San Francisco</li>
+                <li>Private dining available</li>
+              </ul>
+              <a class="btn btn-ghost" href="index.html#contact">Book a private event</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Chef's story</p>
+            <h2>Crafted by a team of culinary storytellers.</h2>
+            <p class="lead">
+              Highlight your chef, sourcing partners, and signature techniques with a compelling
+              story section.
+            </p>
+            <a class="btn btn-ghost" href="index.html#contact">Add chef spotlight</a>
+          </div>
+          <div class="media-card media-restaurant"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Guest reviews</p>
+            <h2>Hospitality that keeps tables full.</h2>
+          </div>
+          <div class="review-grid">
+            <article class="review-card">
+              <p>"Every dish was stunning, and the reservation process was simple."</p>
+              <div class="review-meta">
+                <span>Monica R.</span>
+                <span>Local guide</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <p>"We booked a private event and the team handled everything."</p>
+              <div class="review-meta">
+                <span>David L.</span>
+                <span>Event host</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <p>"Menu updates weekly, and the site always looks fresh."</p>
+              <div class="review-meta">
+                <span>Carla S.</span>
+                <span>Returning guest</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-band">
+            <div>
+              <h2>Want a restaurant site like this?</h2>
+              <p>We can launch your menu, reservations, and events in weeks.</p>
+            </div>
+            <a class="btn btn-primary" href="index.html#contact">Start a project</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <span class="brand-mark">NTS</span>
+          <p>Custom software for teams ready to scale.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#process">Process</a>
+          <a href="index.html#work">Work</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:hello@nortetechsolutions.com">hello@nortetechsolutions.com</a>
+          <span>Available worldwide</span>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>2026 Norte Tech Solutions. All rights reserved.</span>
+      </div>
+    </footer>
+  </body>
+</html>
