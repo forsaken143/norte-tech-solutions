@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="restaurant-styles.css" />
     <link rel="stylesheet" href="chat-widget.css" />
+    <link rel="stylesheet" href="image-zoom.css" />
+    <link rel="stylesheet" href="highlight-carousel.css" />
   </head>
   <body>
     <header class="site-header">
@@ -86,6 +88,52 @@
             <p class="eyebrow">Today's menu</p>
             <h2>Seasonal plates, curated weekly.</h2>
             <p>Feature signature dishes with clear pricing and dietary callouts.</p>
+          </div>
+          <div class="highlights-carousel" data-carousel>
+            <div class="highlights-viewport">
+              <div class="highlights-track">
+                <article class="highlight-slide">
+                  <img src="restaurant/Screenshot 2026-02-25 114754.png" alt="Wood-fired ribeye highlight" class="menu-image" />
+                  <div class="highlight-copy">
+                    <h3>Chef's Ribeye Highlight</h3>
+                    <p>Wood-fired ribeye finished with truffle butter and broccolini.</p>
+                    <div class="highlight-meta">
+                      <span class="highlight-price">$38</span>
+                      <span class="highlight-tag">Chef special</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="highlight-slide">
+                  <img src="restaurant/Screenshot 2026-02-25 114654.png" alt="Seared scallops highlight" class="menu-image" />
+                  <div class="highlight-copy">
+                    <h3>Seared Scallops</h3>
+                    <p>Citrus beurre blanc with shaved fennel and sea herbs.</p>
+                    <div class="highlight-meta">
+                      <span class="highlight-price">$18</span>
+                      <span class="highlight-tag">Guest favorite</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="highlight-slide">
+                  <img src="restaurant/Screenshot 2026-02-25 114824.png" alt="Dark chocolate torte highlight" class="menu-image" />
+                  <div class="highlight-copy">
+                    <h3>Dark Chocolate Torte</h3>
+                    <p>Signature dessert plated with whipped mascarpone.</p>
+                    <div class="highlight-meta">
+                      <span class="highlight-price">$12</span>
+                      <span class="highlight-tag">Limited nightly</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="highlights-controls">
+              <div class="highlights-buttons">
+                <button class="carousel-btn" data-carousel-prev aria-label="Previous highlight">‹</button>
+                <button class="carousel-btn" data-carousel-next aria-label="Next highlight">›</button>
+              </div>
+              <div class="highlights-dots" aria-label="Carousel pagination"></div>
+            </div>
           </div>
           <div class="menu-grid">
             <article class="menu-card">
@@ -271,5 +319,7 @@
       </div>
     </footer>
     <script src="chat-widget.js"></script>
+    <script src="image-zoom.js"></script>
+    <script src="highlight-carousel.js"></script>
   </body>
 </html>

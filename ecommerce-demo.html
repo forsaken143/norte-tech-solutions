@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="ecommerce-styles.css" />
     <link rel="stylesheet" href="chat-widget.css" />
+    <link rel="stylesheet" href="image-zoom.css" />
+    <link rel="stylesheet" href="highlight-carousel.css" />
   </head>
   <body>
     <header class="site-header">
@@ -92,6 +94,52 @@
             <span class="pill">Bestsellers</span>
             <span class="pill">Bundles</span>
             <span class="pill">Limited drops</span>
+          </div>
+          <div class="highlights-carousel" data-carousel>
+            <div class="highlights-viewport">
+              <div class="highlights-track">
+                <article class="highlight-slide">
+                  <img src="ecommerce/Screenshot 2026-02-25 115615.png" alt="Premium Adventure Pack" class="product-image" />
+                  <div class="highlight-copy">
+                    <h3>Premium Adventure Pack</h3>
+                    <p>Top-rated travel essential built for long weekend adventures.</p>
+                    <div class="highlight-meta">
+                      <span class="highlight-price">$298</span>
+                      <span class="highlight-tag">Editor pick</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="highlight-slide">
+                  <img src="ecommerce/Screenshot 2026-02-25 115704.png" alt="Comfort Hiking Boots" class="product-image" />
+                  <div class="highlight-copy">
+                    <h3>Comfort Hiking Boots</h3>
+                    <p>Best-selling pair with strong grip and all-day support.</p>
+                    <div class="highlight-meta">
+                      <span class="highlight-price">$245</span>
+                      <span class="highlight-tag">Bestseller</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="highlight-slide">
+                  <img src="ecommerce/Screenshot 2026-02-25 115504.png" alt="Trail collection highlight" class="product-image" />
+                  <div class="highlight-copy">
+                    <h3>Trail Collection Bundle</h3>
+                    <p>Curated pack for commuters and outdoor creators.</p>
+                    <div class="highlight-meta">
+                      <span class="highlight-price">From $89</span>
+                      <span class="highlight-tag">Limited drop</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="highlights-controls">
+              <div class="highlights-buttons">
+                <button class="carousel-btn" data-carousel-prev aria-label="Previous highlight">‹</button>
+                <button class="carousel-btn" data-carousel-next aria-label="Next highlight">›</button>
+              </div>
+              <div class="highlights-dots" aria-label="Carousel pagination"></div>
+            </div>
           </div>
           <div class="product-grid">
             <article class="product-card">
@@ -358,5 +406,7 @@
       </div>
     </footer>
     <script src="chat-widget.js"></script>
+    <script src="image-zoom.js"></script>
+    <script src="highlight-carousel.js"></script>
   </body>
 </html>

@@ -1,0 +1,63 @@
+/* Image zoom lightbox */
+.product-image,
+.menu-image {
+  cursor: zoom-in;
+}
+
+.image-zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 10000;
+}
+
+.image-zoom-overlay.active {
+  display: flex;
+}
+
+.image-zoom-modal {
+  position: relative;
+  max-width: min(92vw, 1100px);
+  max-height: 88vh;
+  width: auto;
+}
+
+.image-zoom-modal img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 88vh;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.image-zoom-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #111111;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .image-zoom-overlay {
+    padding: 14px;
+  }
+
+  .image-zoom-close {
+    top: -10px;
+    right: -8px;
+  }
+}

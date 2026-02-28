@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="coffee-styles.css" />
     <link rel="stylesheet" href="chat-widget.css" />
+    <link rel="stylesheet" href="image-zoom.css" />
+    <link rel="stylesheet" href="highlight-carousel.css" />
   </head>
   <body>
     <header class="site-header">
@@ -86,6 +88,52 @@
             <p class="eyebrow">Signature menu</p>
             <h2>Drinks that keep guests coming back.</h2>
             <p>Highlight seasonal favorites with a clean, scroll-friendly menu.</p>
+          </div>
+          <div class="highlights-carousel" data-carousel>
+            <div class="highlights-viewport">
+              <div class="highlights-track">
+                <article class="highlight-slide">
+                  <img src="coffee/Screenshot 2026-02-25 114012.png" alt="Honey Oat Latte highlight" class="product-image" />
+                  <div class="highlight-copy">
+                    <h3>Honey Oat Latte</h3>
+                    <p>Velvety oat milk latte finished with locally sourced honey.</p>
+                    <div class="highlight-meta">
+                      <span class="highlight-price">$5.80</span>
+                      <span class="highlight-tag">Top pick</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="highlight-slide">
+                  <img src="coffee/Screenshot 2026-02-25 114101.png" alt="Cold Brew Flight highlight" class="product-image" />
+                  <div class="highlight-copy">
+                    <h3>Cold Brew Flight</h3>
+                    <p>Three single-origin cold brews for tasting and comparison.</p>
+                    <div class="highlight-meta">
+                      <span class="highlight-price">$7.20</span>
+                      <span class="highlight-tag">New release</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="highlight-slide">
+                  <img src="coffee/Screenshot 2026-02-25 114117.png" alt="Maple Cortado highlight" class="product-image" />
+                  <div class="highlight-copy">
+                    <h3>Maple Cortado</h3>
+                    <p>Balanced espresso and maple for a warm seasonal finish.</p>
+                    <div class="highlight-meta">
+                      <span class="highlight-price">$4.60</span>
+                      <span class="highlight-tag">Seasonal</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="highlights-controls">
+              <div class="highlights-buttons">
+                <button class="carousel-btn" data-carousel-prev aria-label="Previous highlight">‹</button>
+                <button class="carousel-btn" data-carousel-next aria-label="Next highlight">›</button>
+              </div>
+              <div class="highlights-dots" aria-label="Carousel pagination"></div>
+            </div>
           </div>
           <div class="product-grid">
             <article class="product-card">
@@ -247,5 +295,7 @@
       </div>
     </footer>
     <script src="chat-widget.js"></script>
+    <script src="image-zoom.js"></script>
+    <script src="highlight-carousel.js"></script>
   </body>
 </html>

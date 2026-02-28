@@ -1,0 +1,116 @@
+/* Product highlights carousel */
+.highlights-carousel {
+  margin: 18px 0 26px;
+  position: relative;
+}
+
+.highlights-viewport {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.highlights-track {
+  display: flex;
+  transition: transform 0.35s ease;
+  will-change: transform;
+}
+
+.highlight-slide {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: var(--card, #fff);
+  border: 1px solid var(--line, #e8e8e8);
+}
+
+.highlight-slide img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.highlight-copy {
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  align-content: center;
+}
+
+.highlight-copy h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.highlight-copy p {
+  margin: 0;
+  color: var(--muted, #666);
+}
+
+.highlight-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.highlight-price {
+  font-weight: 700;
+}
+
+.highlight-tag {
+  font-size: 0.78rem;
+  border: 1px solid var(--line, #e8e8e8);
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.highlights-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.highlights-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line, #e8e8e8);
+  background: var(--card, #fff);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.highlights-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.highlights-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c8c8c8;
+  border: none;
+  cursor: pointer;
+}
+
+.highlights-dot.active {
+  background: #111;
+}
+
+@media (max-width: 860px) {
+  .highlight-slide {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-slide img {
+    height: 240px;
+  }
+}
